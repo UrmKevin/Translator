@@ -2,3 +2,5 @@
 house
 class
 arrow
+yes
+no
