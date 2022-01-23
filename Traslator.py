@@ -30,7 +30,7 @@ while 1:
         break
 
     elif menu.upper()=="K":
-        kontroll(eng_list)
+        kontroll(rus_list,eng_list)
 
     else:
         break

@@ -78,13 +78,24 @@ def viga(l1:list,l2:list,f1:str,f2:str):
 
 
 import os
-from gtts import gTTS
 from random import *
+#from gtts import gTTS
+#from random import *
 
-def heli(text:str,keel:str):
-    obj=gTTS(text=text,lang=keel,slow=False).save("heli.mp3")
-    os.system("heli.mp3")
+#def heli(text:str,keel:str):
+#    obj=gTTS(text=text,lang=keel,slow=False).save("heli.mp3")
+#    os.system("heli.mp3")
 
 
-def kontroll(e):
-    sona=input(Translate"e[randint(0,5)])
+def kontroll(l1,l2):
+    s='1'
+    while s=='1':
+        a=choice(l1)
+        sona=input('Translate '+a+'\n').lower()
+        if sona in l2:
+            if l2.index(sona)==l1.index(a):
+                print('You were right!')
+        else:
+            print('You are wrong!')
+        s=input('You want to continue? yes-1  no-0\n')
+    return
