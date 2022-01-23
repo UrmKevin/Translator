@@ -79,12 +79,12 @@ def viga(l1:list,l2:list,f1:str,f2:str):
 
 import os
 from random import *
-#from gtts import gTTS
-#from random import *
+from gtts import gTTS
+from random import *
 
-#def heli(text:str,keel:str):
-#    obj=gTTS(text=text,lang=keel,slow=False).save("heli.mp3")
-#    os.system("heli.mp3")
+def heli(text:str,keel:str):
+    obj=gTTS(text=text,lang=keel,slow=False).save("heli.mp3")
+    os.system("heli.mp3")
 
 
 def kontroll(l1,l2):
